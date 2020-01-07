@@ -160,6 +160,11 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (min-width: 1000px) {
+  .mobile-header {
+    display: none;
+  }
+}
 .mobile-header p {
   color: #F0C352;
   text-align: center;
@@ -171,6 +176,14 @@ p {
 }
 .desktop-header {
   display: none;
+}
+@media (min-width: 1000px) {
+  .desktop-header {
+    background-color: #8C2C2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 .desktop-header i {
   color: #fcfcfc;
@@ -226,6 +239,16 @@ p {
 .desktop {
   display: none;
 }
+@media (min-width: 1000px) {
+  .desktop {
+    display: inline-block;
+  }
+}
+@media (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
+}
 .middle-content {
   display: none;
 }
@@ -245,6 +268,11 @@ p {
 .reverse {
   display: flex;
   flex-direction: column-reverse;
+}
+@media (min-width: 1000px) {
+  .reverse {
+    flex-direction: column;
+  }
 }
 .join {
   padding: 1% 37%;

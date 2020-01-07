@@ -46,6 +46,17 @@
 
 .desktop {
     display: none;
+
+    @media @dt {
+       display: inline-block; 
+
+    
+    }
+}
+.mobile {
+    @media @dt {
+        display: none;
+    }
 }
 
 .middle-content {
@@ -68,13 +79,14 @@
     padding-bottom: 3%;
 }
 
-// .bottom-content img {
-//     width: 25%;
-// }
 
 .reverse {
     display: flex;
     flex-direction: column-reverse;
+
+    @media @dt {
+        flex-direction: column;
+    }
 }
 
 

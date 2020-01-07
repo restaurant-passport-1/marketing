@@ -1,8 +1,15 @@
+//header displayed while in mobile view
+
 .mobile-header {
     background-color: @pri-red;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+
+    @media @dt {
+        display: none;
+    
+    }
 }
 
 .mobile-header p {
@@ -16,8 +23,17 @@
     cursor: pointer;
 }
 
+//header displayed while in desktop view
+
 .desktop-header {
     display: none;
+
+    @media @dt {
+        background-color: @pri-red;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
 }
 
 .desktop-header i {
