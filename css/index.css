@@ -160,7 +160,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mobile-header {
     display: none;
   }
@@ -177,32 +177,35 @@ p {
 .desktop-header {
   display: none;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .desktop-header {
     background-color: #8C2C2c;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
   }
 }
 .desktop-header i {
   color: #fcfcfc;
   font-size: 3rem;
   padding: 1%;
+  padding-left: 15%;
+  padding-right: 8%;
   cursor: pointer;
   border: 1px solid black;
 }
 .desktop-header p {
   color: #F0C352;
   text-align: left;
+  margin-right: 45%;
   border: 1px solid black;
 }
 .desktop-header a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #fcfcfc;
-  padding: 3%;
-  margin-right: 5%;
+  padding: 3%, 3%;
+  margin-right: 15%;
   border: 1px solid black;
 }
 .download,
@@ -250,18 +253,32 @@ p {
 .desktop {
   display: none;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .desktop {
     display: inline-block;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mobile {
     display: none;
   }
 }
 .middle-content {
   display: none;
+}
+@media (min-width: 1200px) {
+  .middle-content {
+    display: inline-block;
+  }
+}
+.middle-img {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .middle-img {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .banner img {
   width: 100%;
@@ -280,7 +297,7 @@ p {
   display: flex;
   flex-direction: column-reverse;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .reverse {
     flex-direction: column;
   }
@@ -288,4 +305,5 @@ p {
 .join {
   padding: 1% 37%;
   margin: 5% 5%;
+  margin-left: 12%;
 }

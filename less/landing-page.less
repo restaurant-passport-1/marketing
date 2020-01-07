@@ -6,6 +6,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
 .signup {
     background-color: @pri-yellow;
     color: @pri-red;
@@ -14,13 +15,11 @@
     margin: 1% 5% 10%;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 .top-content {
     display: flex;
     flex-direction: column;
-   
 }
 
 .top-content h1, h2, p {
@@ -49,10 +48,9 @@
 
     @media @dt {
        display: inline-block; 
-
-    
     }
 }
+
 .mobile {
     @media @dt {
         display: none;
@@ -61,6 +59,19 @@
 
 .middle-content {
     display: none;
+
+    @media @dt {
+        display: inline-block;
+    }
+}
+
+.middle-img {
+    display: none;
+
+    @media @dt {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .banner img {
@@ -79,7 +90,6 @@
     padding-bottom: 3%;
 }
 
-
 .reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -89,12 +99,9 @@
     }
 }
 
-
-
-
-
 .join {
    padding: 1% 37%;
    margin: 5% 5%;
+   margin-left: 12%;
   
 }
