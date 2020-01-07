@@ -164,8 +164,22 @@ p {
   color: #F0C352;
   text-align: center;
 }
+.mobile-header i {
+  color: #fcfcfc;
+  font-size: 3rem;
+  cursor: pointer;
+}
 .desktop-header {
   display: none;
+}
+.desktop-header i {
+  color: #fcfcfc;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.desktop-header p {
+  color: #F0C352;
+  text-align: left;
 }
 .download,
 .join {
@@ -174,6 +188,7 @@ p {
   padding: 1%;
   margin: 1% 5%;
   border-radius: 5px;
+  cursor: pointer;
 }
 .signup {
   background-color: #FFF9E2;
@@ -182,6 +197,7 @@ p {
   padding: 1%;
   margin: 1% 5% 10%;
   border-radius: 5px;
+  cursor: pointer;
 }
 .top-content {
   display: flex;
