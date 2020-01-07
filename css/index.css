@@ -135,14 +135,14 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -154,12 +154,18 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.header {
+.mobile-header {
   background-color: #8C2C2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.header p {
+.mobile-header p {
   color: #F0C352;
   text-align: center;
+}
+.desktop-header {
+  display: none;
 }
 .download,
 .join {
@@ -218,6 +224,7 @@ p {
 }
 .bottom-content h3 {
   color: #8C2C2c;
+  padding-bottom: 3%;
 }
 .reverse {
   display: flex;
