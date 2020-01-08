@@ -158,7 +158,7 @@ p {
   background-color: #8C2C2c;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media (min-width: 1200px) {
   .mobile-header {
@@ -182,31 +182,32 @@ p {
     background-color: #8C2C2c;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
 .desktop-header i {
   color: #fcfcfc;
   font-size: 3rem;
   padding: 1%;
-  padding-left: 15%;
+  padding-left: 10%;
   padding-right: 8%;
   cursor: pointer;
-  border: 1px solid black;
+}
+.desktop-header nav {
+  width: 600px;
 }
 .desktop-header p {
   color: #F0C352;
   text-align: left;
-  margin-right: 45%;
-  border: 1px solid black;
+  margin-right: 25%;
+  width: 300px;
 }
 .desktop-header a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #fcfcfc;
   padding: 3%, 3%;
-  margin-right: 15%;
-  border: 1px solid black;
+  margin-right: 4%;
 }
 .download,
 .join {
@@ -225,6 +226,15 @@ p {
   margin: 1% 5% 10%;
   border-radius: 5px;
   cursor: pointer;
+  padding: 1% 37%;
+  margin: 3% 5%;
+  margin-left: 10%;
+}
+@media (min-width: 1200px) {
+  .dt-top {
+    margin-top: 10%;
+    width: 42%;
+  }
 }
 .top-content {
   display: flex;
@@ -236,12 +246,16 @@ p {
     background-size: 75% 100%;
     background-repeat: no-repeat;
     background-position: right top;
+    margin-bottom: 5%;
   }
 }
 .top-content h1,
 h2,
 p {
   padding-left: 5%;
+  width: 97%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 .top-content h1 {
   color: #8C2C2c;
@@ -279,6 +293,11 @@ p {
     display: inline-block;
   }
 }
+.middle-content .middle-content h2 {
+  margin-left: 10%;
+  padding: 1%;
+  width: 150%;
+}
 .middle-img {
   display: none;
 }
@@ -288,6 +307,24 @@ p {
     justify-content: space-evenly;
   }
 }
+.mid-one,
+.mid-two,
+.mid-three {
+  width: 320px;
+  height: 320px;
+  background-color: #F0C352;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.middle-img p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-top: 5%;
+}
 .banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%), url(../img/ella-olsson-nZAem1CDE9s-unsplash\ 2.jpg);
   color: #fcfcfc;
@@ -295,13 +332,16 @@ p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 300px;
+  text-align: right;
+}
+.banner .desktop,
+.banner .mobile {
+  margin-right: 1%;
+  margin-top: 1%;
 }
 @media (min-width: 1200px) {
   .banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 4.69%, rgba(49, 49, 49, 0.525342) 25.52%, rgba(88, 88, 88, 0.426221) 45.31%, rgba(255, 255, 255, 0) 80.73%), url(../img/barbecue-bbq-delicious-dinner-3690\ 2.jpg);
-    color: #fcfcfc;
-    background-position: right top;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 4.69%, rgba(49, 49, 49, 0.525342) 25.52%, rgba(88, 88, 88, 0.426221) 45.31%, rgba(255, 255, 255, 0) 80.73%), url(../img/barbecue-bbq-delicious-dinner-3690.jpg);
     background-size: 100% 100%;
   }
 }
@@ -328,7 +368,7 @@ p {
 }
 .bottom-content h3 {
   color: #8C2C2c;
-  padding-bottom: 3%;
+  padding: 3%;
 }
 .reverse {
   display: flex;
@@ -339,8 +379,9 @@ p {
     flex-direction: column;
   }
 }
-.join {
+.join,
+.download {
   padding: 1% 37%;
   margin: 5% 5%;
-  margin-left: 12%;
+  margin-left: 10%;
 }
