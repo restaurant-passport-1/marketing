@@ -227,12 +227,16 @@ p {
   cursor: pointer;
 }
 .top-content {
-  background: linear-gradient(90deg, #FFF9E2 0%, rgba(255, 252, 239, 0.546875) 17.19%, rgba(255, 255, 255, 0) 55.21%), linear-gradient(360deg, #FFF9E2 0%, rgba(255, 253, 246, 0.296875) 19.21%, rgba(255, 255, 255, 0) 77.6%), url(../img/ella-olsson-nZAem1CDE9s-unsplash\ 2.jpg);
-  background-size: 75% 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .top-content {
+    background: linear-gradient(90deg, #FFF9E2 0%, rgba(255, 252, 239, 0.546875) 17.19%, rgba(255, 255, 255, 0) 55.21%), linear-gradient(360deg, #FFF9E2 0%, rgba(255, 253, 246, 0.296875) 19.21%, rgba(255, 255, 255, 0) 77.6%), url(../img/ella-olsson-nZAem1CDE9s-unsplash\ 2.jpg);
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }
 .top-content h1,
 h2,
@@ -284,9 +288,22 @@ p {
     justify-content: space-evenly;
   }
 }
-.banner img {
-  width: 100%;
-  height: 144px;
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%), url(../img/ella-olsson-nZAem1CDE9s-unsplash\ 2.jpg);
+  color: #fcfcfc;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+}
+@media (min-width: 1200px) {
+  .banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 4.69%, rgba(49, 49, 49, 0.525342) 25.52%, rgba(88, 88, 88, 0.426221) 45.31%, rgba(255, 255, 255, 0) 80.73%), url(../img/barbecue-bbq-delicious-dinner-3690\ 2.jpg);
+    color: #fcfcfc;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 }
 .bottom {
   display: flex;
