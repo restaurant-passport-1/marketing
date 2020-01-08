@@ -227,6 +227,10 @@ p {
   cursor: pointer;
 }
 .top-content {
+  background: linear-gradient(90deg, #FFF9E2 0%, rgba(255, 252, 239, 0.546875) 17.19%, rgba(255, 255, 255, 0) 55.21%), linear-gradient(360deg, #FFF9E2 0%, rgba(255, 253, 246, 0.296875) 19.21%, rgba(255, 255, 255, 0) 77.6%), url(../img/ella-olsson-nZAem1CDE9s-unsplash\ 2.jpg);
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
   display: flex;
   flex-direction: column;
 }
