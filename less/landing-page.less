@@ -109,7 +109,21 @@
 .bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    .one, .two, .three, .four, .five {
+        position: relative;
+        text-align: center;
+        color: @bg-white;
+        margin: 1%;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        font-size: 3rem;
+    }
 }
 
 .bottom-content h3 {

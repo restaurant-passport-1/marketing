@@ -308,7 +308,23 @@ p {
 .bottom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.bottom .one,
+.bottom .two,
+.bottom .three,
+.bottom .four,
+.bottom .five {
+  position: relative;
+  text-align: center;
+  color: #fcfcfc;
+  margin: 1%;
+}
+.bottom .top-left {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 3rem;
 }
 .bottom-content h3 {
   color: #8C2C2c;
