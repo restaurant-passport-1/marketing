@@ -1,12 +1,18 @@
 .download, .join {
     background-color: @pri-red;
     color:@bg-white;
+    &:hover {
+        background-color: @hov-red;
+    }
 }
 
 .signup {
     background-color: @pri-yellow;
     color: @pri-red;
     border: 1px solid @pri-red;
+    &:hover {
+        background-color: @hov-yellow;
+    }
 }
 #signUp {
     border: none;
@@ -199,13 +205,22 @@
 
 .download {
     margin-bottom: 1%;
+
+    &:hover {
+        background-color: @hov-red;
+    }
 }
 
 .join {
     @media @dt {
     width: 40%;
-    align-self: center;
+    text-align: center;
+    //align-self: center;
     justify-self: center;
     margin-left: 30%;
     }
+    span {
+        margin: 0 auto;
+    }
+
 }

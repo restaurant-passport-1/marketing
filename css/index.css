@@ -330,10 +330,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   background-color: #8C2C2c;
   color: #fcfcfc;
 }
+.download:hover,
+.join:hover {
+  background-color: #632525;
+}
 .signup {
   background-color: #FFF9E2;
   color: #8C2C2c;
   border: 1px solid #8C2C2c;
+}
+.signup:hover {
+  background-color: #E8DFBF;
 }
 #signUp {
   border: none;
@@ -523,11 +530,17 @@ button {
 .download {
   margin-bottom: 1%;
 }
+.download:hover {
+  background-color: #632525;
+}
 @media (min-width: 1200px) {
   .join {
     width: 40%;
-    align-self: center;
+    text-align: center;
     justify-self: center;
     margin-left: 30%;
   }
+}
+.join span {
+  margin: 0 auto;
 }
