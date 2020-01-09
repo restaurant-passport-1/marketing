@@ -18,7 +18,7 @@
         <p>
             Restaurant Passport
         </p>
-        <nav>
+        <nav class="js--main-nav">
             <a href="#">My Passport</a>
             <a href="#">Log In</a>
             <a href="#">About Us</a>
@@ -27,14 +27,25 @@
         </a>
     </header>
     <header class="mobile-header">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
+        <!-- <a class="js--nav-icon"><i class="fas fa-bars"></i></a>
+        <i class="fas fa-times"></i> -->
+
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="#" target="_blank">My Passport</a></li>
+                <li><a href="#" target="_blank">Log In</a></li>
+                <li><a href="#" target="_blank">About Us</a></li>
+            </ul>
+        </div>
         <p>
             Restaurant<br> Passport
         </p>
-        <nav>
-
-        </nav>
         <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+ne&aqs=chrome.0.0j69i57j0l6.3559j0j8&sourceid=chrome&ie=UTF-8" , target="_blank"> <i class="fas fa-search"></i>
         </a>
     </header>
@@ -125,6 +136,8 @@
     <button class="join">
         Join Now!
     </button>
+
+    <!-- <script src="js/script.js"></script> -->
 
 
 </body>
