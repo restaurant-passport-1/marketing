@@ -1,24 +1,12 @@
 .download, .join {
     background-color: @pri-red;
     color:@bg-white;
-    padding: 1%;
-    //margin: 1% 3%;
-    border-radius: 5px;
-    cursor: pointer;
-    //width: 110px;
 }
 
 .signup {
     background-color: @pri-yellow;
     color: @pri-red;
     border: 1px solid @pri-red;
-    padding: 1%;
-    margin: 1% 5% 10%;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 1% 37%;
-    margin: 3% 5%;
-    margin-left: 10%;
 }
 
 .dt-top {
@@ -137,7 +125,6 @@
         margin-top: 1%;
     } 
     
-
     @media @dt {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 4.69%, rgba(49, 49, 49, 0.525342) 25.52%,
          rgba(88, 88, 88, 0.426221) 45.31%, rgba(255, 255, 255, 0) 80.73%), url(../img/barbecue-bbq-delicious-dinner-3690.jpg);  
@@ -166,8 +153,12 @@
 }
 
 .bottom-content h3 {
-    color: @pri-red;
-    padding: 3%;
+    color: @blk-text;
+    font-weight: bold;
+    padding-left: 5%;
+    width: 97%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 .reverse {
@@ -179,9 +170,25 @@
     }
 }
 
-.join, .download {
-   padding: 1% 37%;
+.join, .download, .signup {
+   width: 90%; 
+   padding: 1% 25%;
    margin: 5% 5%;
-   //margin-left: 10%;
-  
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 2.4rem;
+
+   @media @dt {
+    width: 35%;
+    padding: 1%; 
+ }
+}
+
+.join {
+    @media @dt {
+    width: 40%;
+    align-self: center;
+    justify-self: center;
+    margin-left: 30%;
+    }
 }
