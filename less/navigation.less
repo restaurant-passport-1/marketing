@@ -29,30 +29,10 @@
     cursor: pointer;
 }
 
-// mobile nav drop down //
-
-// .main {
-//     margin: 0 auto;
-//     display: block;
-//     height: 100%;
-//     margin-top: 60px;
-// }
-// .mainInner{
-//     display: table;
-//     height: 100%;
-//     width: 100%;
-//     text-align: center;
-// }
-// .mainInner div{
-//     display:table-cell;
-//     vertical-align: middle;
-//     font-size: 3em;
-//     font-weight: bold;
-//     letter-spacing: 1.25px;
-// }
-
-
 #sidebarMenu {
+    // display: flex;
+    // flex-direction: column;
+    display: block;
     height: 100%;
     position: fixed;
     left: 0;
@@ -60,7 +40,7 @@
     margin-top: 60px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, @pri-red 100%, @pri-yellow 100%);
+    background: linear-gradient(180deg, @pri-red 70%, @pri-yellow 100%);
 }
 .sidebarMenuInner{
     margin:0;
@@ -75,19 +55,18 @@
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    //z-index: 98;
 }
-// .sidebarMenuInner li span{
-//     display: block;
-//     font-size: 14px;
-//     color: rgba(255, 255, 255, 0.50);
-//}
+
 .sidebarMenuInner li a{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    //z-index: 98;
 }
+
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
