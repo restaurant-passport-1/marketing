@@ -30,8 +30,7 @@
 }
 
 #sidebarMenu {
-    // display: flex;
-    // flex-direction: column;
+    top: 0%;
     display: block;
     height: 100%;
     position: fixed;
@@ -43,6 +42,10 @@
     background: linear-gradient(180deg, @pri-red 70%, @pri-yellow 100%);
 }
 .sidebarMenuInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin:0;
     padding:0;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
@@ -51,11 +54,11 @@
     list-style: none;
     color: #fff;
     text-transform: uppercase;
+    font-size: 2rem;
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    //z-index: 98;
 }
 
 .sidebarMenuInner li a{
@@ -64,7 +67,6 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    //z-index: 98;
 }
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
@@ -169,7 +171,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: @sec-yellow;  
     text-align: left;
     margin-right: 25%;
-    width: 300px;
+    width: 500px;
+    font-size: 3rem;
 }
 
 .desktop-header a {
