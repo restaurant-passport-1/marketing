@@ -1,8 +1,168 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-size: cover;
     background-image: url("../img/restaurant3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+/*mobile nav header */
+
+.mobile-header {
+    background-color: #8C2C2c;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Roboto Slab', sans-serif;
+    overflow: hidden;
+}
+
+.mobile-header p {
+    color: #F0C352;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    width: 500px;
+}
+
+.mobile-header i {
+    color: #fcfcfc;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#sidebarMenu {
+    top: 3.5%;
+    display: block;
+    height: 50%;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #8C2C2c 50%, #FFF9E2 100%);
+}
+
+.sidebarMenuInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #FFF9E2;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarMenuInner li a {
+    color: #FFF9E2;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover {
+    background-color: #FFF9E2;
+    color: #8C2C2c;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
 }
 
 #container {
@@ -112,3 +272,50 @@ button {
 button:hover {
     background-color: #474747;
 }
+
+
+/* Desktop header */
+
+
+/* 
+.desktop-header {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .desktop-header {
+        background-color: #8C2C2c;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.desktop-header i {
+    color: #fcfcfc;
+    font-size: 3rem;
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 8%;
+    cursor: pointer;
+}
+
+.desktop-header nav {
+    width: 600px;
+}
+
+.desktop-header p {
+    color: #F0C352;
+    text-align: left;
+    margin-right: 25%;
+    width: 500px;
+    font-size: 3rem;
+}
+
+.desktop-header a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fcfcfc;
+    padding: 3%, 3%;
+    margin-right: 4%;
+} */
